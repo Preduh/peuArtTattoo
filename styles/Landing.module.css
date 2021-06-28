@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Roboto:wght@100;300;400&display=swap');
 
 .landing {
-  background-color: #ffffff;
-  width: 100%;
+  min-width: 100%;
   height: 100vh;
-  color: black;
+  color: white;
+  background-image: url("../public/images/tattoo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
 }
 
 .header {
@@ -19,7 +22,7 @@
 .logo {
   font-size: 42px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -27,7 +30,7 @@
 .menu a {
   font-size: 22px;
   text-decoration: none;
-  color: black;
+  color: white;
   margin-left: 32px;
   transition: all linear 0.1s;
   font-family: 'Roboto', sans-serif;
@@ -38,81 +41,14 @@
   color: #cacaca;
 }
 
-.figure1 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 100px;
-}
+@media (max-width: 600px) {
+  .landing {
+    background-image: url("../public/images/tattoo-mobile.png");
+    width: 500px;
+    height: 100vh;
+  }
 
-.figure2 {
-  margin-left: 64px;
-  margin-top: 32px;
-}
-
-.about {
-  width: 90%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  margin-left: 5%;
-  margin-top: 128px;
-  border-radius: 12px;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 10px 10px 30px #333333;
-}
-
-.textarea {
-  background-color: white;
-  width: 70%;
-  height: 300px;
-  padding: 60px;
-  font-size: 22px;
-  color: black;
-  border-radius: 12px 0 0 12px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about img {
-  width: 30%;
-  border-radius: 0 12px 12px 0;
-  filter: grayscale(100%);
-}
-
-.wppBtn {
-  position: absolute;
-  bottom: 0;
-  width: 320px;
-  height: 80px;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  background-color: #171717;
-  color: white;
-  font-size: 28px;
-  margin-bottom: -40px;
-  margin-left: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: all linear 0.1s;
-}
-
-.wppBtn img {
-  width: 52px;
-  height: 52px;
-}
-
-.wppBtn:hover {
-  transform: scale(1.05);
-  border-radius: 0;
+  .header {
+    height: 100px;
+  }
 }
