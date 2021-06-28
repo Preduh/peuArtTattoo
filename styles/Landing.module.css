@@ -24,7 +24,7 @@
   padding: 0 128px;
   background-color: #0000005d;
   position: fixed;
-  backface-visibility: hidden;
+  z-index: 1;
 }
 
 #logo {
