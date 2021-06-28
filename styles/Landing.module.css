@@ -1,37 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Roboto:wght@100;300;400&display=swap');
 
 .landing {
+  width: 100%;
+  height: 300vh;
+  scroll-behavior: smooth;
+}
+
+.firstView {
   min-width: 100%;
   height: 100vh;
-  color: white;
   background-image: url("../public/images/tattoo.png");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
 }
 
 .header {
-  width: 90%;
-  height: 70px;
+  width: 100%;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 5%;
+  flex-wrap: wrap;
+  padding: 0 128px;
+  background-color: #0000005d;
+  position: fixed;
+  backface-visibility: hidden;
 }
 
-.logo {
-  font-size: 42px;
-  text-decoration: none;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+#logo {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
 }
 
 .menu a {
   font-size: 22px;
   text-decoration: none;
   color: white;
-  margin-left: 32px;
   transition: all linear 0.1s;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -41,14 +52,49 @@
   color: #cacaca;
 }
 
+.contacts {
+  width: 100%;
+  height: 100vh;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  border: 3px solid;
+}
+
 @media (max-width: 600px) {
-  .landing {
+  .firstView {
     background-image: url("../public/images/tattoo-mobile.png");
-    width: 500px;
     height: 100vh;
+    filter: grayscale(100%);
   }
 
   .header {
-    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 32px;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    padding: 0;
+  }
+  .menu a {
+    font-size: 14px;
+  }
+
+  #logo {
+    width: 60px;
   }
 }
