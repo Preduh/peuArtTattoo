@@ -98,7 +98,7 @@
   }
 
   .menu a {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .areas {
@@ -106,19 +106,23 @@
   }
   
   .title {
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 340px) {
   .menu {
     padding: 0;
   }
   .menu a {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #logo {
     width: 60px;
+  }
+
+  .title {
+    font-size: 38px;
   }
 }

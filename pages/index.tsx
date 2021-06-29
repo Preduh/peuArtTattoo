@@ -20,13 +20,17 @@ const Landing: NextPage = () => {
         <h1 className={styles.title}>
           TEM
           <br />
-          ESPAÇO
+          ESPAÇO?
           <br />
           FAZ
           <br />
-          TATTOO
+          TATTOO!
         </h1>
-        <Card title="01 Tattoo 5cm" img="/images/coqueiro.png" />
+        <Card title="Promoção">
+          <p>01 Tattoo 5cm - R$45,00</p>
+          <p>01 Tattoo 5cm - R$45,00</p>
+          <p>01 Tattoo 5cm - R$45,00</p>
+        </Card>
       </section>
       <section className={styles.areas} id="contacts">
         Área de Contatos
