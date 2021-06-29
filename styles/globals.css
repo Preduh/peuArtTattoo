@@ -10,3 +10,12 @@ html, body {
   scroll-behavior: smooth;
   color: white;
 }
+
+body::-webkit-scrollbar {
+  background-color: #4b4b4b;
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #131313;
+}

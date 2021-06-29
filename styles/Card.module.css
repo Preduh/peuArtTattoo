@@ -1,0 +1,36 @@
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: #525252d7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 32px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 230px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 270px;
+    }
+
+    .card img {
+        margin-top: 20px;
+        width: 150px;
+    }
+}

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap');
 
 .landing {
   width: 100%;
   height: 300vh;
-  scroll-behavior: smooth;
 }
 
 .firstView {
@@ -12,6 +12,18 @@
   background-image: url("../public/images/tattoo.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 128px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 64px;
+  letter-spacing: 3px;
+  animation: wordsToggle ease-in-out 1s;
 }
 
 .header {
@@ -52,7 +64,7 @@
   color: #cacaca;
 }
 
-.contacts {
+.areas {
   width: 100%;
   height: 100vh;
   font-size: 64px;
@@ -60,7 +72,14 @@
   align-items: center;
   justify-content: center;
   background-color: #1b1b1b;
-  border: 3px solid;
+}
+
+@keyframes wordsToggle {
+  from {
+    transform: scale(0.1);
+  } to {
+    transform: scale(1.0);
+  }
 }
 
 @media (max-width: 600px) {
@@ -68,6 +87,7 @@
     background-image: url("../public/images/tattoo-mobile.png");
     height: 100vh;
     filter: grayscale(100%);
+    padding: 128px 32px;
   }
 
   .header {
@@ -81,8 +101,12 @@
     font-size: 18px;
   }
 
-  .contacts {
+  .areas {
     text-align: center;
+  }
+  
+  .title {
+    font-size: 48px;
   }
 }
 
@@ -91,7 +115,7 @@
     padding: 0;
   }
   .menu a {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   #logo {

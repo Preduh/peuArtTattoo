@@ -1,26 +1,39 @@
 import styles from '../styles/Landing.module.css'
 
 import { NextPage } from 'next'
+import Card from '../components/Card'
 
 const Landing: NextPage = () => {
   return (
-    <div className={styles.landing}>
+    <div className={styles.landing} id="landing">
       <header className={styles.header}>
-        <img src="/images/logo.png" id={styles.logo} />
+        <a href="#hero">
+          <img src="/images/logo.png" id={styles.logo} />
+        </a>
         <div className={styles.menu}>
-          <a href="#home">Home</a>
-          <a href="#contacts">Contato</a>
+          <a href="#hero">Home</a>
+          <a href="#contacts">Contatos</a>
           <a href="#portifolio">Portifólio</a>
         </div>
       </header>
-      <div className={styles.firstView} id="home" />
-      <div className={styles.contacts} id="contacts">
+      <section className={styles.firstView} id="hero">
+        <h1 className={styles.title}>
+          TEM
+          <br />
+          ESPAÇO
+          <br />
+          FAZ
+          <br />
+          TATTOO
+        </h1>
+        <Card title="01 Tattoo 5cm" img="/images/coqueiro.png" />
+      </section>
+      <section className={styles.areas} id="contacts">
         Área de Contatos
-      </div>
-      <div className={styles.contacts} id="portifolio">
+      </section>
+      <section className={styles.areas} id="portifolio">
         Área do Portifólio
-      </div>
-      <button className={styles.upBtn}>Subir</button>
+      </section>
     </div>
   )
 }
