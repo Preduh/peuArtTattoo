@@ -47,7 +47,7 @@ const Landing: NextPage = () => {
               </button>
             </a>
             <a
-              href="https://api.whatsapp.com/message/WFSOXJP2Y5FEI1"
+              href="https://wa.me/message/WFSOXJP2Y5FEI1"
               target="_blank"
               rel="noreferrer"
             >

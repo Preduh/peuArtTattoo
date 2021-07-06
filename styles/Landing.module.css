@@ -92,7 +92,8 @@
 .contatosBtns {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  height: 200px;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -170,6 +171,7 @@
 
   .contatos {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .contatosImg {
@@ -179,6 +181,7 @@
   .contatosBtns {
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
 
   .instaBtn, .wppBtn {
