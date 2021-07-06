@@ -35,6 +35,7 @@ const Landing: NextPage = () => {
       <section className={styles.areas} id="contacts">
         <div className={styles.contatos}>
           <img src="/images/et.png" className={styles.contatosImg} />
+          <p>Faça já seu orçamento</p>
           <div className={styles.contatosBtns}>
             <a
               href="https://www.instagram.com/peuarttattoo/"
@@ -43,7 +44,6 @@ const Landing: NextPage = () => {
             >
               <button className={styles.instaBtn}>
                 <img src="/images/instagram.png" />
-                @peuarttattoo
               </button>
             </a>
             <a
@@ -53,7 +53,6 @@ const Landing: NextPage = () => {
             >
               <button className={styles.wppBtn}>
                 <img src="/images/whatsapp.png" />
-                Agendar tatto
               </button>
             </a>
           </div>
