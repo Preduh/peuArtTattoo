@@ -28,13 +28,13 @@
 
 .header {
   width: 100%;
-  height: 100px;
+  height: 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 128px;
-  background-color: #0000005d;
+  background-color: #000000c5;
   position: fixed;
   z-index: 1;
 }
@@ -68,10 +68,69 @@
   width: 100%;
   height: 100vh;
   font-size: 64px;
+  background-color: #1b1b1b;
+}
+
+.contatos {
+  width: 100%;
+  height: 100vh;
+  font-size: 64px;
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: row;
+  padding-top: 7.5%;
+}
+
+.contatosBtns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contatosBtns a {
+  text-decoration: none;
+}
+
+.instaBtn {
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  border: none;
+  cursor: pointer;
+  font-size: 48px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1b1b1b;
+  border-radius: 50px;
+  box-shadow: 16px 16px 12px #00000060;
+  margin-bottom: 64px;
+}
+
+.wppBtn {
+  width: 100%;
+  height: 100px; 
+  border: none;
+  cursor: pointer;
+  font-size: 48px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #2a9e2a, #068610);
+  border-radius: 50px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 16px 16px 12px #00000060;
+}
+
+.instaBtn img, .wppBtn img {
+  width: 52px;
+  margin-right: 24px;
 }
 
 @keyframes wordsToggle {
@@ -108,6 +167,18 @@
   .title {
     font-size: 38px;
   }
+
+  .contatos {
+    flex-wrap: wrap;
+  }
+
+  .contatosImg {
+    display: none;
+  }
+
+  .instaBtn, .wppBtn {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 340px) {
@@ -124,5 +195,9 @@
 
   .title {
     font-size: 38px;
+  }
+
+  .instaBtn, .wppBtn {
+    font-size: 28px;
   }
 }

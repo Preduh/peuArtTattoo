@@ -26,14 +26,38 @@ const Landing: NextPage = () => {
           <br />
           TATTOO!
         </h1>
-        <Card title="Promoção">
+        <Card title="Promoções">
           <p>01 Tattoo 5cm - R$45,00</p>
-          <p>01 Tattoo 5cm - R$45,00</p>
-          <p>01 Tattoo 5cm - R$45,00</p>
+          <p>02 Tattoo 5cm - R$70,00</p>
+          <p>03 Tattoo 5cm - R$120,00</p>
         </Card>
       </section>
       <section className={styles.areas} id="contacts">
-        Área de Contatos
+        <div className={styles.contatos}>
+          <img src="/images/et.png" className={styles.contatosImg} />
+          <div className={styles.contatosBtns}>
+            <a
+              href="https://www.instagram.com/peuarttattoo/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className={styles.instaBtn}>
+                <img src="/images/instagram.png" />
+                @peuarttattoo
+              </button>
+            </a>
+            <a
+              href="https://api.whatsapp.com/message/WFSOXJP2Y5FEI1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className={styles.wppBtn}>
+                <img src="/images/whatsapp.png" />
+                Agendar tatto
+              </button>
+            </a>
+          </div>
+        </div>
       </section>
       <section className={styles.areas} id="portifolio">
         Área do Portifólio
